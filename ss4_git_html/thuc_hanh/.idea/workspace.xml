@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb090801-6092-4cf6-ab67-6539708b8719" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/table_nang_cao.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3_pseudo_flowchart/bai_tap/tre.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3_pseudo_flowchart/thuc_hanh/New Text Document.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3_pseudo_flowchart/thuc_hanh/ád.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../bai_tap/tao_form_co_ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_tap/tao_form_co_ban.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/google_share.html" beforeDir="false" afterPath="$PROJECT_DIR$/google_share.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1646275166298</updated>
       <workItem from="1646275167459" duration="2166000" />
+      <workItem from="1646315130410" duration="1959000" />
     </task>
     <servers />
   </component>
@@ -87,6 +88,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="462" y="106" key="FileChooserDialogImpl" timestamp="1646277348938">
