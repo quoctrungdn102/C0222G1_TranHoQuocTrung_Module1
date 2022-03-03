@@ -20,11 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb090801-6092-4cf6-ab67-6539708b8719" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/table_nang_cao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tb_nang_cao_2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3_pseudo_flowchart/bai_tap/tre.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3_pseudo_flowchart/thuc_hanh/New Text Document.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../ss3_pseudo_flowchart/thuc_hanh/ád.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_git_html/bai_tap/tao_form_co_ban.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_git_html/thuc_hanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss4_git_html/thuc_hanh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_git_html/thuc_hanh/google_share.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss4_git_html/thuc_hanh/table_nang_cao.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,6 +61,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CODEGYM\module1\ss5_form_table\thuc_hanh" />
       <recent name="E:\CODEGYM\module1\ss4_git_html\thuc_hanh" />
     </key>
   </component>
@@ -72,6 +77,7 @@
       <updated>1646275166298</updated>
       <workItem from="1646275167459" duration="2166000" />
       <workItem from="1646315130410" duration="1959000" />
+      <workItem from="1646318052777" duration="4578000" />
     </task>
     <servers />
   </component>
