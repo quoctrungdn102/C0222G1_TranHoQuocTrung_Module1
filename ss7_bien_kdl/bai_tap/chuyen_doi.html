@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From currency</th>
+            <th>To curency</th>
+        </tr>
+        <tr>
+            <td><input type="text" id="nv"></td>
+            <td>
+                <select id="select1">
+                    <option value="vn">Việt Nam</option>
+                    <option value="my">Mỹ</option>
+
+                </select>
+
+            </td>
+            <td>
+                <select id="select2">
+                    <option value="vn">VN</option>
+                    <option value="my">USD</option>
+
+                </select>
+            </td>
+            <td>
+                <button onclick="nut()">
+                    convert
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td><spanp>Result:</spanp> <span id="ra"></span></td>
+        </tr>
+    </table>
+
+
+
+</body>
+<script>
+    function nut() {
+
+        let giatrinhap = document.getElementById('nv').value;
+        let a = document.getElementById('select1').value;
+        let b = document.getElementById('select2').value;
+        let result;
+        if (a == b) {
+            e = giatrinhap
+            alert(giatrinhap);
+        }
+        if (a == "vn" && b == "my") {
+            e = giatrinhap/24000
+            alert(giatrinhap / 24000);
+
+        }
+        if (a == "my" && b == "vn") {
+            e = giatrinhap*24000
+            alert(giatrinhap * 24000);
+        }
+        document.getElementById("ra").innerHTML = e
+
+    }
+</script>
+</html>
