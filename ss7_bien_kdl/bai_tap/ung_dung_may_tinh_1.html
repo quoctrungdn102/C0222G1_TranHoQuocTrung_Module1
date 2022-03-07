@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input type="text" id="bang1">
+<span><input type="text" id="bang2"></span>
+<p></p>
+<button onclick="click1()">Additon(+)</button>
+<button onclick="click2()">Subsaction(-)</button>
+<button onclick="click3()">Multiplication(x)</button>
+<button onclick="click4()">Division (/)</button>
+ <p   id="ra"> </p>
+<script>
+    function click1() {
+        let a = parseInt(document.getElementById('bang1').value);
+        let b = parseInt(document.getElementById('bang2').value);
+        additon = a + b
+        document.getElementById('ra').innerHTML = "resul: " + additon;
+    }
+    function click2() {
+        let a = parseInt(document.getElementById('bang1').value);
+        let b = parseInt(document.getElementById('bang2').value);
+        subsaction = a - b
+        document.getElementById('ra').innerHTML = "resul:" + subsaction;
+    }
+    function click3() {
+        let a = parseInt(document.getElementById('bang1').value);
+        let b = parseInt(document.getElementById('bang2').value);
+        Multiplication = a * b
+        document.getElementById('ra').innerHTML = "resul:" + Multiplication
+    }
+    function click4() {
+        let a = parseInt(document.getElementById('bang1').value);
+        let b = parseInt(document.getElementById('bang2').value);
+        Division = a / b
+        document.getElementById('ra').innerHTML = "resul:" + Division;
+    }
+
+</script>
+</body>
+</html>
