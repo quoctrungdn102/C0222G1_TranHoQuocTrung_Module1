@@ -8,21 +8,21 @@
 <script>
     let userName = prompt("Who's there?", '');
 
-    if (userName == 'Admin') {
-        // alert(prompt('nhập pass word?'))
+    if (userName == 'admin') {
+        let pass = prompt('Password?', '');
+        if (pass == 'admin' ){
+            alert("you welcome")
+        }else if (pass == null){
+            alert("canceled")
+        }else{
+            alert("wrong passwprd")
+        }
     }else if (userName == 'null'){
         alert('cancel')
     }else {
         alert("i don't know you")
     }
-    let pass = prompt('Password?', '');
-    if (pass == 'TheMarter' ){
-        alert("you welcome")
-    }else if (pass == null){
-        alert("canceled")
-    }else{
-        alert("wrong passwprd")
-    }
+
 </script>
 
 </body>
