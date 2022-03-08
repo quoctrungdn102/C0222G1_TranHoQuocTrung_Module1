@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhap"><span>
+   <button onclick="nut()">Tính số ngày </button>
+    <p id="ra"></p>
+    <script>
+        function nut() {
+            let giatrinhapvao =  parseInt(document.getElementById('nhap').value)
+            switch (giatrinhapvao) {
+                case 1:
+                    document.getElementById('ra').innerHTML = "tháng 1 có 31 ngày "
+                    break;
+                case 2:
+                    document.getElementById('ra').innerHTML = "tháng 2 có 28,29 ngày "
+                    break;
+                case 3:
+                    document.getElementById('ra').innerHTML = "tháng 3 có 31 ngày "
+                    break;
+                case 4:
+                    document.getElementById('ra').innerHTML = "tháng 4 có 30 ngày "
+                    break;
+                case 5:
+                    document.getElementById('ra').innerHTML = "tháng 5 có 31 ngày "
+                    break;
+                case 6:
+                    document.getElementById('ra').innerHTML = "tháng 6 có 30 ngày "
+                    break;
+                case 7:
+                    document.getElementById('ra').innerHTML = "tháng 7 có 31 ngày "
+                    break;
+                case 8:
+                    document.getElementById('ra').innerHTML = "tháng 8 có 31 ngày "
+                    break;
+                case 9:
+                    document.getElementById('ra').innerHTML = "tháng 9 có 30 ngày "
+                    break;
+                case 10:
+                    document.getElementById('ra').innerHTML = "tháng 10 có 31 ngày "
+                    break;
+                case 11:
+                    document.getElementById('ra').innerHTML = "tháng 11 có 30 ngày "
+                    break;
+                case 12:
+                    document.getElementById('ra').innerHTML = "tháng 12 có 31 ngày "
+                    break;4
+                default:
+                    document.getElementById('ra').innerHTML = "khong co thang nay "
+            }
+
+        }
+
+
+    </script>
+
+</body>
+</html>
