@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapsotien = parseInt(prompt('nhap so tien '))
+    if(nhapsotien < 10000000){
+        document.write('khong can nop thue ')
+    }else if (nhapsotien >= 10000000&&nhapsotien<30000000){
+        let thuephainop = nhapsotien*0.02
+        document.write(nhapsotien+'thì tien thue can nop 2% là :' + thuephainop.toLocaleString() )
+    }else {
+        let thuephainop2 = nhapsotien*0.05
+        document.write(nhapsotien+ 'thì tien thue can nop 5% là:' + thuephainop2.toLocaleString())
+    }
+
+</script>
+
+</body>
+</html>
