@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('so nguyen thu nhat'))
+    let b= parseInt(prompt('so nguyen thu hai'))
+    let c = parseInt(prompt('so nguyen thu ba '))
+    if((a==b==c)){
+        alert(' so nguyen bang nhau ')
+    }else if((a==b)&&(a>c)) {
+        alert('khong co so nguyen lon nhat')
+    }else if ((a==c)&&(a>b)){
+        alert('khong co gia tri lon nhat')
+    }else if ((a>b )&& (a>c)) {
+        alert('so nguyen thu nhat max')
+    }else if(b>c){
+        alert('so ngyen thu hai  max')
+    } else if(b==c) {
+        alert('không có số lớn nhất ')
+    }else {
+        ('so nguyen thu ba max')
+    }
+
+
+
+</script>
+
+</body>
+</html>
