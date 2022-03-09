@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diembaikiemtra= parseInt(prompt('nhap diem bai kiem tra '))
+    let diemgiuaky = parseInt(prompt('nhap diem giua ky '))
+    let diemcuoiky = parseInt(prompt('nhap diem cuoi ky '))
+   let  total = (diemcuoiky + diembaikiemtra +diemgiuaky )/3
+    if((total<=10)&&(total>7)){
+        alert('xep loai A')
+    }else if ((total<=7)&&(total>4)){
+        alert('xep loai B')
+    }else if((total<=4)&&(total<0)){
+        alert('xep loai C')
+    }else {
+        alert('nhap lai')
+    }
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapsotien = parseInt(prompt('nhap so tien'))
+    if(nhapsotien<=10000000){
+       let total = nhapsotien*0.01
+        alert('hoa hong 10%: ' + total.toLocaleString())
+    }else if((nhapsotien>10000000)&&(nhapsotien<30000000)){
+        let total = nhapsotien*0.015
+        alert('hoa hong 15%: ' + total.toLocaleString())
+    }else {
+        let total = nhapsotien*0.02
+        alert('hoa hong 20%: ' + total.toLocaleString())
+    }
+
+
+
+</script>
+</body>
+</html>
