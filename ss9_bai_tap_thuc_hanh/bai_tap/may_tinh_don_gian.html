@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td{
+            width: 30px;
+            text-align: right;
+            padding:5px;
+        }
+
+        button{
+            font-size: 30px;
+            width: 55px;
+        }
+
+    </style>
+</head>
+
+<body>
+<table>
+    <tr>
+        <td colspan="4"><input s\ id="nhap" style="font-size: 20px ;text-align: right" type ="text" placeholder="0" </td>
+    </tr>
+    <tr class="font">
+        <td  ><button onclick="nhan('1')">1</button></td>
+        <td><button onclick="nhan('2')">2</button></td>
+        <td><button onclick="nhan('3')">3</button></td>
+        <td ><button class="font" onclick="nhan('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="nhan('4')">4</button></td>
+        <td><button onclick="nhan('5')">5</button></td>
+        <td><button onclick="nhan('6')">6</button></td>
+        <td ><button onclick="nhan('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="nhan('7')">7</button></td>
+        <td><button onclick="nhan('8')">8</button></td>
+        <td><button onclick="nhan('9')">9</button></td>
+        <td><button onclick="nhan('*')">x</button></td>
+    </tr>
+    <tr>
+        <td><button onclick="nhan2('xoa')">c</button></td>
+        <td><button onclick="nhan('0')">0</button></td>
+        <td><button onclick="nhan1('=')">=</button></td>
+        <td><button onclick="nhan('/')">/</button></td>
+    </tr>
+
+</table>
+<script>
+    function nhan(value) {
+     document.getElementById('nhap').value += value
+    }
+    function nhan2() {
+        document.getElementById('nhap').value =''
+    }
+    function nhan1() {
+        let laypheptinh = document.getElementById('nhap').value
+        let total = eval(laypheptinh)
+        document.getElementById('nhap').value = total
+    }
+</script>
+
+</body>
+</html>
