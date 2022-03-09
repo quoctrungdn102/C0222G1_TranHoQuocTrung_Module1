@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhap a'))
+    let b = parseInt(prompt('nhap b'))
+    let c = parseInt(prompt('nhap c'))
+    if((a>0)&&(b>0)&&(c>0)){
+        if((a+b)>c){
+            if((a+c)>b){
+                if((b+c)>a){
+                  document.write('a,b,c là canh cua tam giac')
+                }else{
+                    document.write('a,b,c khong là canh cua tam giac')
+                }
+            }else {
+                document.write('a,b,c khong là canh cua tam giac')
+            }
+        }else {
+            document.write('a,b,c khong là canh cua tam giac')
+        }
+
+    }else {
+        document.write('a,b,c khong là canh cua tam giac')
+    }
+</script>
+
+</body>
+</html>

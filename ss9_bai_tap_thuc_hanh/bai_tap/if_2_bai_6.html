@@ -9,10 +9,14 @@
     let a = parseInt(prompt('nhap a'))
     let b = parseInt(prompt('nhap b'))
     let x = (-b)/a
-    if((a!=0)&&(b!=0)) {
+    if(a!=0 &&b!=0 ) {
         document.write('ket qua phuong trinh bac mot là : ' + x)
-    }else
-        document.write('a,b phai khac 0')
+    }else if (a = 0 && b != 0) {
+        document.write('pt vo nghiem')
+    }else {
+        document.write('pt vo so nghiem')
+    }
+
 </script>
 
 </body>
