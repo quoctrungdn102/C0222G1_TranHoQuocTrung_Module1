@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="nhan()">choi</button>
+<script>
+    function nhan() {
+        let nhapkhhoangcach = parseInt(prompt('muon doan trong khoang nao ')) // 1 20
+        let random1 = Math.floor((Math.random() * nhapkhhoangcach) + 1);
+for ( ; ;) {
+    let nhapsodoan = parseInt(prompt('num'))
+    if (nhapsodoan < random1){
+        alert('nhap so lon chut nua')
+    }else if( nhapsodoan > random1){
+        alert('nhap be lai')
+    }else{
+        alert('ban doan dung roi ')
+        break;
+    }
+}
+
+
+            }
+</script>
+
+</body>
+</html>
