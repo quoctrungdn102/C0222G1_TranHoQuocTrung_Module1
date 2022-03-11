@@ -8,8 +8,9 @@
 <button onclick="nhan()">choi</button>
 <script>
     function nhan() {
-        let nhapkhhoangcach = parseInt(prompt('muon doan trong khoang nao ')) // 1 20
-        let random1 = Math.floor((Math.random() * nhapkhhoangcach) + 1);
+        let nhapkhhoangcach = parseInt(prompt('muon doan trong khoang tu ')) // 1 20
+        let nhapkhoangcach1 = parseInt(prompt('den '))
+        let random1 = Math.floor((Math.random() * (nhapkhoangcach1-nhapkhhoangcach)+nhapkhhoangcach));
 for ( ; ;) {
     let nhapsodoan = parseInt(prompt('num'))
     if (nhapsodoan < random1){
