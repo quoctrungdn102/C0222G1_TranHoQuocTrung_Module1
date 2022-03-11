@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập số tiền gửi: '));
+    let b = prompt('Nhập thời gian muốn gửi (tháng): ');
+    let total = a;
+    let total2 = '';
+
+        for (i = 1 ;i <= b; i++) {
+            // total =total*1.00059
+            total= total + total*0.00059
+            total2 += "Tháng " + i + " gốc + lãi = " + total.toLocaleString() + " VNđ <br>";
+        }
+        document.write(total2);
+
+</script>
+</body>
+</html>
