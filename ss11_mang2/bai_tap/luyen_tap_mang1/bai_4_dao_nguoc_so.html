@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+let nhap = parseInt(prompt('nhap do dai mang'));
+for(let i = 0; i < nhap;i++){
+     let nhap2 = prompt('nhap phan tu thứ '+(i+1));
+    // if(isNaN(nhap2)){
+    //     alert("nhap vao so nguyen");
+    // }else {
+        mang.push(nhap2);
+        // i++;
+    // }
+}
+document.write(mang+"<br>");
+document.write(mang.reverse());
+</script>
+
+</body>
+</html>

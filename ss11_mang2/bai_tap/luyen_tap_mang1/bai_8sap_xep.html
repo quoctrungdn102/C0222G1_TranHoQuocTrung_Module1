@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let mang = []
+let nhap = parseInt(prompt('do dai mang '))
+    for (let i = 0 ; i < nhap; i ++){
+        let mang1  = parseInt(prompt('nhap  so nguyen'))
+        mang.push(mang1)
+
+
+    }
+    alert(mang.sort(function (a,b) {
+        return a-b;
+
+    }));
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang =[];
+    let nhap = parseInt(prompt('do dai mang '));
+    for (let i = 0; i < nhap;){
+        let nhap2 = parseInt(prompt('nhap so nguyên am hoac duong '));
+        if(isNaN(nhap2)){
+            alert('nhap lai ');
+        }else {
+            mang.push(nhap2);
+            i++;
+        }
+    }
+    dem = 0;
+    for (let i = 0; i < mang.length;i++){
+        if(mang[i] < 0){
+            document.write(mang[i]+"<br>")
+            dem++;
+        }
+    }
+    document.write('tong so nguyen am la ' + dem)
+
+
+</script>
+
+</body>
+</html>

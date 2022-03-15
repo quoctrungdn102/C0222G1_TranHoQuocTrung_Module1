@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang =[1,2,3,4,5,6,7,8,9,10]
+    let nhap = parseInt(prompt('nhap so can xoa trong mang 1-10'))
+    for(let i = 0; i < mang.length; i++){
+        if (mang.indexOf(nhap)){
+            mang.splice(mang.indexOf(nhap),1);
+            break;
+        }
+    }
+    console.log(mang)
+    alert(mang);
+</script>
+
+</body>
+</html>
