@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<p>Translate : </p>
+<input type="text" id="nhapvao" value="">
+<input type="button" onclick="checkText()" value="Xác nhận">
+<p id="xuat"></p>
+<script>
+    function checkText(){
+        let a = document.getElementById('nhapvao').value
+        // let a = b.toLowerCase();
+        let anh =  ["how","what"]
+        let viet = ["the nao","cai gi"]
+        for(let i=0;i< anh.length;i++) {
+            if (anh[i].indexOf(a) !== -1) {
+               document.getElementById('xuat').innerHTML =  viet[i];
+               break;
+            }else if (viet[i].indexOf(a) !== -1 ){
+                document.getElementById('xuat').innerHTML = anh[i];
+                break;
+            }else {
+                document.getElementById('xuat').innerHTML = 'khong co trong tu dien cua tui'
+            }
+        }
+    }
+
+</script>
 </body>
 </html>

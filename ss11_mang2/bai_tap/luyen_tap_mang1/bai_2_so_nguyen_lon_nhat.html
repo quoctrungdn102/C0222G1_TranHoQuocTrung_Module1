@@ -2,9 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = new Array(9);
+
+    let max = 0;
+    // let index = 0;
+
+    for (let i = 0; i < a.length;i++ ) {
+        a[i] = parseInt(prompt('nhap 10 so nguyen khac nhau' ))
+       if (a[i]>max){
+           max = a[i];
+        }
+    }
+    console.log(a);
+    document.write('gia trị lon nhat là'+ max+"<br> vị trí "+a.indexOf(max))
+
+
+
+
+
+
+
+</script>
 </body>
 </html>
