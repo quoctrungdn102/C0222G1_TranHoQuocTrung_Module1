@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang1 = [];
+    let count = 0;
+    let nhap = parseInt(prompt('nhap do dai mang'));
+    for(let i = 0; i < nhap;i++){
+        let nhap2 = prompt('nhap phan tu thứ '+(i+1));
+        mang1.push(nhap2);
+    }
+    let string = mang1.join("");
+    let mang2 = string.split("");
+    for (let i = 0; i< mang2.length;i++){
+        if (isNaN(mang2[i])){
+            count++;
+        }
+    }
+    document.write(mang1+'<br>')
+    document.write('so tu trong mang là :'+ count)
+</script>
+
+</body>
+</html>
