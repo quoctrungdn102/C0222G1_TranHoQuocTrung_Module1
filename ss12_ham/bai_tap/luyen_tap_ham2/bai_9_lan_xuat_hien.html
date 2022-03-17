@@ -5,6 +5,34 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let kyTu = prompt('nhap mot ky tu ');
+    let lengthArray = prompt('nhap do dai mang tiep theo');
+    let array = [];
+    for (let i = 0 ; i< lengthArray; i++ ){
+        let kytuArray = prompt('nhap ky tu')
+        array.push(kytuArray)
+    }
+    function myfunction(a,array1) {
+        let count = 0;
+        for (let i =0; i< array.length;i++) {
+            if (array[i].indexOf(a) !== -1) {
+                count++
+
+            }
+
+        // }if (array[i].indexOf(a)== -1){
+        //     return false
+        }
+        if (count===0){
+            return -1;
+        }else {
+            return count
+        }
+
+    }
+    document.write(myfunction(kyTu,array))
+</script>
 
 </body>
 </html>
