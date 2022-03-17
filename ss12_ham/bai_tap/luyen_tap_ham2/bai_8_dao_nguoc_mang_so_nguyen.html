@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dodaimang = parseInt(prompt('nhap do dai mang '));
+    let mang = [];
+       for (let i = 0; i < dodaimang; i++) {
+           let phantu = parseInt(prompt('nhap phan tu thu  ' + (i + 1)))
+           mang.push(phantu)
+
+       }
+    function dao(text) {
+           let result = text.reverse()
+        return result;
+
+    }
+    document.write(mang+ '<br>')
+    document.write(dao(mang))
+
+
+</script>
+
+</body>
+</html>

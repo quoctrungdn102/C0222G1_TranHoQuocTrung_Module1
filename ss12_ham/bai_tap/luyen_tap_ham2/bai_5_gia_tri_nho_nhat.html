@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('nhap so thu nhat'))
+    let b = parseInt(prompt('nhap so thu hai'))
+    let c = parseInt(prompt('nhap so thu ba'))
+    let mang = []
+ mang.push(a,b,c)
+function min() {
+        let min =  mang[0]
+    for (let i=0;i< mang.length;i++){
+        if (mang[i] < min){
+            min = mang[i]
+        }
+    }return min
+}
+alert( 'gia tri nho nhat = '+min(mang))
+
+</script>
+
+</body>
+</html>
