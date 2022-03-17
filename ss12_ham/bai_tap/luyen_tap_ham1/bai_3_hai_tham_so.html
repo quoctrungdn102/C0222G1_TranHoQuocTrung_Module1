@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let number1 = parseInt(prompt('nhap so thu nhat'))
+    let number2 = parseInt(prompt('nhap so thu hai'))
+    function myFunction(a,b) {
+        if (a > b) {
+            return 'so thu nhat lon hon so thu hai '
+        } else {
+            return  a + b;
+        }
+    }
+    let total = myFunction(number1,number2)
+    alert(total)
+</script>
+
 </body>
 </html>

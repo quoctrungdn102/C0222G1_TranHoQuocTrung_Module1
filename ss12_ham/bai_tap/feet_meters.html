@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1>Chuyen doi feet va meters</h1>
+<input id="text" type="text" oninput="myfunction(this.value) " onchange="myfunction(this.value)">
+<span>
+    <select id="select">
+        <option value="feet">feet</option>
+        <option value="meter">meters</option>
+    </select></span>
+<p id="xuat"></p>
+<script>
+    function myfunction(number) {
+        let b = 0;
+        let select = document.getElementById('select').value;
+        if (select == 'feet') {
+            b = number * 0.305
+            document.getElementById('xuat').innerHTML = b + ' meter'
+        }
+
+        if (select == 'meter') {
+            b = number * 3.279
+            document.getElementById('xuat').innerHTML = b + ' feet'
+        }
+
+
+
+    }
+</script>
+
+
 </body>
 </html>

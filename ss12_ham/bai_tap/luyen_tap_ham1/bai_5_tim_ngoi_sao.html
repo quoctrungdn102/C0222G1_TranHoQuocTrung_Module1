@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let nhapvao = prompt('nhap ten sao ')
+    let array1 = ['Polaris','Aldebaran', 'Deneb','Vega', 'Altair', 'Dubhe','Regulu']
+    let array2 = ['UrsaMinor', 'Tarurus', 'Cygnus','Lyra', 'Aquila', 'UrsaMajor', 'Leo']
+    function string() {
+        for (let i = 0; i < array1.length; i++) {
+            if (array1[i] === nhapvao) {
+                return array2[i]
+
+            }
+
+        }
+    }
+    let b = string()
+    alert(b)
+
+
+
+</script>
+
 </body>
 </html>

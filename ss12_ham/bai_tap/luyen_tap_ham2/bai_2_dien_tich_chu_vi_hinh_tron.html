@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function dienTich(bankinh) {
+        let result = bankinh*bankinh*(Math.PI)
+        return result;
+
+    }
+    function chuVi(bankinh) {
+        let result = 2*bankinh*Math.PI
+        return result;
+
+    }
+    let r = parseInt(prompt('nhap ban kinh hinh tron'))
+    alert('dien tich hinh tron ='+dienTich(r).toFixed(2) )
+    alert('chu vi hinh tron =  '+ chuVi(r).toFixed(2))
+</script>
+
+</body>
+</html>
