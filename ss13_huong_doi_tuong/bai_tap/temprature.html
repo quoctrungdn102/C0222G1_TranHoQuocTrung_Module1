@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class NhietDo {
+        constructor(doC) {
+            this.doC1 = doC;
+        }
+
+            doF(){
+                 return (this.doC1*1.8)+32 ;
+            }
+            doK(){
+                return this.doC1+275.15;
+            }
+    }
+
+        let doC = 25;
+        let ob = new NhietDo(25);
+        alert("do F = "+ob.doF())
+        alert("do K = "+ob.doK())
+
+
+</script>
+
+</body>
+</html>
