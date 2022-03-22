@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        speak(cmt) {
+            return this.name +" noi:" + cmt;
+        }
+
+        eat(tao) {
+
+            if(tao.weight>0){
+                tao.weight--
+                this.weight++
+                return `${this.name}da an tao, can nang tang len ${this.weight}. `;
+            }else {
+                return 'tao het roi'
+            }
+
+        }
+
+        kiemTraKhoiLuong(tao) {
+            return tao.weight ;
+        }
+    }
+
+    class Apple {
+        constructor(weight) {
+            this.weight = weight;
+
+        }
+
+    }
+
+    let adam1 = new Human('Adam', 'Nam', 50)
+    let eval1 = new Human('eval','nu',40)
+    let tao = new Apple(10)
+    console.log('khoi luong tao '+adam1.kiemTraKhoiLuong(tao))
+  for (let i =0 ; i< 5;i++){
+      console.log(adam1.eat(tao))
+  }
+    console.log(adam1.speak('anh an no qua'));
+    console.log('khoi luong tao '+adam1.kiemTraKhoiLuong(tao))
+    for (let i = 0 ; i< 6;i++){
+        console.log(eval1.eat(tao));
+    }
+    console.log(eval1.speak(' minh di ngu thoi '));
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class hinhchunhat{
+        constructor(chieudai,chieurong) {
+            this.chieudai = chieudai;
+            this.chieurong = chieurong;
+        }
+        dientich(){
+            return this.chieudai*this.chieurong
+        }
+        chuvi(){
+            return (this.chieudai + this.chieurong)*2
+        }
+
+    }
+    let a=parseInt(prompt('nhap chieu dai'))
+    let b= parseInt(prompt('nhap chieu rong '))
+    let tinh = new hinhchunhat(a,b)
+    alert('dien tich='+tinh.dientich())
+    alert('chu vi ='+tinh.chuvi())
+
+</script>
+
+</body>
+</html>
