@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    while (true){
+    var width = parseInt(prompt('nhap chieu dai  hinh chu nhat '))
+    var height = parseInt(prompt('nhap chieu rong hih chu nhat '))
+
+        if (isNaN(width)&&isNaN(height)){
+            alert('nhap lai la so')
+        }else {
+            break;
+        }
+    }
+
+
+
+        for (let i = 1; i <= width; i++) {
+            for (let j = 1; j <= height; j++) {
+                if (i == 1 || i == width || j == 1 || j == height) {
+                    document.write('*&nbsp&nbsp')
+                } else {
+                    document.write("&nbsp&nbsp&nbsp&nbsp")
+                }
+            }
+            document.write("<br>")
+
+        }
+
+
+
+    // let vehinh = hinhchunhat(width,height)
+
+</script>
+
+</body>
+</html>

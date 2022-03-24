@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isPrimeNumber(number) {
+        let count = 0;
+
+        for (let i = 1; i <= number; i++) {
+            if (number % i === 0) {
+                count++;
+            }
+        }
+
+        if (count === 2) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let m = parseInt(prompt('nhap dong' ))
+    let n = parseInt(prompt('nhap cot'))
+
+function myfunction(a,b){
+    let arr1=[];
+    let count1 =0;
+
+    let arr = [];
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = parseInt(prompt('nhap ca phan tu'))
+            if(isPrimeNumber(arr[i][j])){
+                arr1.push(arr[i][j])
+                count1++
+
+            }
+        }
+    }return arr1
+}
+let arr = myfunction(m,n)
+    console.log(arr)
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = 'aabccf'
+    let str2 = 'adcedf'
+    let count = 0;
+    let arrStr1 = str1.split('');
+    let arrStr2 = str2.split('');
+
+    while (arrStr1.length > 0) {
+        let x = arrStr1.shift();
+        for (let j = 0; j < arrStr2.length; j++) {
+            if (arrStr2[j] === x) {
+                arrStr2.splice(j, 1);
+                count++;
+                break;
+            }
+        }
+    }
+    alert(count);
+
+
+    // for (let j = 0 ; i<str2.length;i ++ ){
+    //     if (str2[j]===str1[i]){
+    //         str3.push(str2[i])
+    //         str2.slice(0,1)
+    //
+    //     }
+    // }
+
+</script>
+
+</body>
+</html>

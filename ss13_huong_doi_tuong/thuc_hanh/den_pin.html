@@ -2,9 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    class FlashLamp {
+        constructor(status, battery) {
+            this.status = status;
+            this.battery = battery;
+        }
+
+        trangThaiBongDen() {
+            console.log(this.status)
+            console.log('pin'+this.battery+'%')
+        }
+        // trangThaiPin(){
+        //     console.log(this.battery)
+        // }
+
+    }
+    class congTac{
+        bat(den){
+            console.log('da bat cong tac')
+            den.status = 'den sang'
+            den.battery--
+        }
+        tat(den){
+            console.log('cong tac da tat')
+            den.status = ' den tat'
+
+        }
+    }
+    let den1 = new FlashLamp('den tat',10)
+    let congTac1 = new congTac()
+    den1.trangThaiBongDen()
+    congTac1.bat(den1)
+    den1.trangThaiBongDen()
+
+    congTac1.tat(den1)
+    den1.trangThaiBongDen()
+
+
+
+
+</script>
+
+
 </body>
 </html>

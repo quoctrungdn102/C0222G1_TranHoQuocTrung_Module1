@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+
+    function name(a){
+        for (let i = 0, c = 1; i < a.length - c; i++, c++) {
+            if (isNaN(a)) {
+                alert('Đây không phải là chuỗi');
+                break;
+            }
+            if (a[i] === a[a.length - c]) {
+                flag = true;
+            } else {
+                flag = false;
+                break;
+            }
+        }
+        if (flag === true) {
+            return "Đối xứng"
+        } else {
+            return  "khong doi xung "
+        }
+    }
+    let a = prompt('Nhập vào 1 kí tự');
+    let flag = false;
+    alert(name(a))
+</script>
 </body>
 </html>

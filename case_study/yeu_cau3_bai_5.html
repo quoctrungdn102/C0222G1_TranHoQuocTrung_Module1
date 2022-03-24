@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        button{
+            width: 200px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>MENU</h1>
+<ol >
+    <li><button id="1" type="button" onclick="goiMon(0,parseInt(prompt('nhap so luong cf ')))">Cafe : 10k</button> </li>
+    <li><button id="2" type="button" onclick="goiMon(1,parseInt(prompt('nhap so luong')))">Cam vắt :20k</button> </li>
+    <li><button id="3"type="button" onclick="goiMon(2,parseInt(prompt('nhap so luong')))">Nước ép cà rốt:20k</button></li>
+    <li><button id="4" type="button" onclick="goiMon(3,parseInt(prompt('nhap so luong')))">Nước ép cà chua:20k</button></li>
+    <li><button id="5" type="button" onclick="goiMon(4,parseInt(prompt('nhap so luong')))">Nước lọc:5k</button></li>
+    <li><button id="6" type="button" onclick="goiMon(5,parseInt(prompt('nhap so luong')))">Nước dừa:25k</button></li>
+    <li><button  id="7"type="button" onclick="goiMon(7)">Thoát gọi món</button></li>
+
+</ol>
+<script>
+    let total = 0;
+    function goiMon(tenmon,value) {
+        let arr= [10000,20000,20000,20000,5000,25000];
+
+    if (tenmon === 7) {
+        alert(total + " vnd");
+        alert('see you again')
+        total = 0;
+    }else{
+        total += arr[tenmon]*value;
+        alert("dat mon thanh cong")
+    }
+}
+        // total+= arr[tenmon]*value;
+        // alert(total)
+</script>
+
+</body>
+</html>

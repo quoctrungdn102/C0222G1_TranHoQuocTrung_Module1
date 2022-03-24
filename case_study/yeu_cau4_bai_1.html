@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuẩn hóa ký tự</title>
+</head>
+<body>
+<script>
+    let xauKyTu = prompt("Nhập vào 1 chuỗi");
+    let arr = xauKyTu.split(' ');
+    let a = '';
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] !== '') {
+            let str = arr[i].toLowerCase();
+            let str1 = str.charAt(0).toUpperCase() + str.slice(1);
+            console.log(str1);
+            a += str1 + ' ';
+        }
+
+    }
+    alert(a);
+    // alert(arr)
+    // let b = "";
+    // document.write("Chuỗi nhập lúc đầu là: " + xauKyTu);
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] !== "") {
+    //         arr[i] = arr[i].toLowerCase();
+    //         arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1, arr[i].length);
+    //         b += arr[i] + ' ';
+    //     }
+    // }
+    // document.write('<br>' + 'Chuỗi nhận được là: ' + b);
+</script>
+</body>
+</html>

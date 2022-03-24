@@ -10,12 +10,13 @@
 let nhap = parseInt(prompt('nhap do dai mang'));
 for(let i = 0; i < nhap;i++){
      let nhap2 = prompt('nhap phan tu thứ '+(i+1));
-    // if(isNaN(nhap2)){
-    //     alert("nhap vao so nguyen");
-    // }else {
+    if(isNaN(nhap2)){
+        alert("nhap vao so nguyen");
+    }else {
         mang.push(nhap2);
-        // i++;
+        i++;
     // }
+}
 }
 document.write(mang+"<br>");
 document.write(mang.reverse());
